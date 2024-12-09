@@ -161,6 +161,10 @@ a.secondary {
   }
 }
 
+.section_button {
+  background: red;
+}
+
 @media (prefers-color-scheme: dark) {
   .logo {
     filter: invert();
