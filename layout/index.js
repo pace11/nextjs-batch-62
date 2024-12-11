@@ -1,6 +1,7 @@
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 export default function Layout({
@@ -23,7 +24,20 @@ export default function Layout({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={`${styles.page}`}>
-        <main className={styles.main}>{children}</main>
+        <main className={styles.main}>
+          <ul>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/profile">Profile</Link>
+            </li>
+            <li>
+              <Link href="/cart">Cart</Link>
+            </li>
+          </ul>
+          {children}
+        </main>
         <footer className={styles.footer}>
           {!isProfilePage && (
             <>

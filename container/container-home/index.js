@@ -1,6 +1,8 @@
 import Form from "@/components/form";
 
-export default function ContainerHome({ dataForm = [] }) {
+export default function ContainerHome(props) {
+  const { dataForm } = {...props}
+
   return (
     <div>
       {dataForm?.map((item, index) => (

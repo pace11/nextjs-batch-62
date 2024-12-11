@@ -3,7 +3,7 @@ import ContainerHome from "@/container/container-home";
 import Layout from "@/layout";
 
 export default function Home() {
-
+  
   return (
     <Layout
       metaTitle="Nextjs - Home"
