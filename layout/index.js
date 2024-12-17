@@ -35,6 +35,9 @@ export default function Layout({
             <li>
               <Link href="/cart">Cart</Link>
             </li>
+            <li>
+              <Link href="/notes">Notes</Link>
+            </li>
           </ul>
           {children}
         </main>

@@ -6,8 +6,6 @@ import { useRouter } from "next/router";
 export default function Profile() {
   const router = useRouter()
 
-  console.log('router => ', router)
-
   return (
     <Layout
       metaTitle="Nextjs - Profile"
