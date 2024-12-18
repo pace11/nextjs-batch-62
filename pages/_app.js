@@ -1,7 +1,12 @@
 // import "@/styles/button.css";
-import "@/styles/globals.css";
-import { } from 'next/font/google';
+// import "@/styles/globals.css";
+import { ChakraProvider } from '@chakra-ui/react'
+
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <ChakraProvider>
+      <Component {...pageProps} />;
+    </ChakraProvider>
+  )
 }
